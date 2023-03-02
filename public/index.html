@@ -25,6 +25,22 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/assets/Bootstrap-5.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/assets/Bootstrap-5.0.0/css/dataTables.bootstrap5.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/assets/Bootstrap-5.0.0/css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/assets/icon-fontawesome-pro-5.15/css/all.css"
+    />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +55,26 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script src="%PUBLIC_URL%/assets/Bootstrap-5.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/icon-fontawesome-pro-5.15/js/all.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/Bootstrap-5.0.0/js/jquery-3.5.1.js"></script>
+    <script src="%PUBLIC_URL%/assets/Bootstrap-5.0.0/js/jquery.dataTables.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/Bootstrap-5.0.0/js/dataTables.bootstrap5.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/Bootstrap-5.0.0/js/script.js"></script>
+
+    <!-- ShowPasswordLogin -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#show-password").click(function () {
+          if ($(this).is(":checked")) {
+            $("#inputPassword").attr("type", "text");
+          } else {
+            $("#inputPassword").attr("type", "password");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
